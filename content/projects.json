@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "etala",
+    "name": "Etala by El Manara",
+    "client": "El Manara",
+    "location": "Egypt",
+    "services": "Interactive solution, CGI, 360° tours",
+    "hero": "etala-aerial",
+    "stats": [
+      {
+        "value": "77",
+        "label": "units"
+      },
+      {
+        "value": "17",
+        "label": "buildings"
+      },
+      {
+        "value": "4",
+        "label": "unit types"
+      },
+      {
+        "value": "Live",
+        "label": "availability"
+      }
+    ],
+    "built": [
+      {
+        "title": "Interactive 3D masterplan",
+        "text": "The whole compound, explorable building by building."
+      },
+      {
+        "title": "Live availability",
+        "text": "Every unit marked available or sold in real time."
+      },
+      {
+        "title": "360° unit walkthroughs",
+        "text": "Rendered interiors for every unit type."
+      },
+      {
+        "title": "Developer dashboard",
+        "text": "Units, phases, prices and leads in one place."
+      }
+    ],
+    "gallery": [
+      "etala-masterplan",
+      "etala-platform",
+      "etala-unit",
+      "etala-360-interior",
+      "etala-360-street",
+      "etala-360-dining"
+    ],
+    "next": "tilal"
+  },
+  {
+    "slug": "tilal",
+    "name": "Tilal, Jeddah Heights",
+    "client": "Tilal",
+    "location": "Saudi Arabia",
+    "services": "Interactive solution, CGI, dashboard",
+    "hero": "tilal-platform",
+    "stats": [
+      {
+        "value": "4",
+        "label": "villa models"
+      },
+      {
+        "value": "AR/EN",
+        "label": "platform"
+      },
+      {
+        "value": "Live",
+        "label": "dashboard"
+      },
+      {
+        "value": "KSA",
+        "label": "market"
+      }
+    ],
+    "built": [
+      {
+        "title": "Interactive masterplan",
+        "text": "Every plot and villa model on one map."
+      },
+      {
+        "title": "Arabic and English",
+        "text": "The full platform in both languages."
+      },
+      {
+        "title": "Developer dashboard",
+        "text": "Unit allocation, phases, payments and inquiries."
+      }
+    ],
+    "gallery": [
+      "tilal-masterplan",
+      "dashboard"
+    ],
+    "next": "etala"
+  }
+]

@@ -1,0 +1,281 @@
+[
+  {
+    "slug": "cgi",
+    "name": "CGI Renders",
+    "short": "Exterior and interior, 4K",
+    "group": "3D Visualization",
+    "audience": "For developers",
+    "headline": "Photoreal renders that sell before you build.",
+    "intro": "Exterior and interior CGI that shows buyers exactly what they are paying for, ready for brochures, billboards and your sales platform.",
+    "includes": [
+      {
+        "title": "Exterior renders",
+        "text": "Photorealistic exterior visuals that bring your architectural design to life."
+      },
+      {
+        "title": "Interior staging",
+        "text": "Bespoke furniture, textures and decor per unit type."
+      },
+      {
+        "title": "Aerial views",
+        "text": "A complete compound visualization featuring landscaped spaces and amenities."
+      },
+      {
+        "title": "Print-ready 4K",
+        "text": "Optimized for print, web, and social media."
+      }
+    ],
+    "images": [
+      "cgi-facade",
+      "cgi-living",
+      "cgi-bedroom",
+      "etala-aerial",
+      "hero"
+    ],
+    "related": [
+      "plans",
+      "reels",
+      "tours"
+    ]
+  },
+  {
+    "slug": "plans",
+    "name": "3D Plans",
+    "short": "Floor plans and master plans",
+    "group": "3D Visualization",
+    "audience": "For developers",
+    "headline": "Plans buyers understand at a glance.",
+    "intro": "3D floor plans and master plans that turn technical drawings into something every buyer can read.",
+    "includes": [
+      {
+        "title": "3D floor plans",
+        "text": "One for every unit type, furnished and to scale."
+      },
+      {
+        "title": "3D master plans",
+        "text": "Site zoning, roads, parks and amenities from above."
+      },
+      {
+        "title": "Brochure-ready exports",
+        "text": "Delivered for print, web and the sales platform."
+      }
+    ],
+    "images": [
+      "floorplan",
+      "sun-capital-plan",
+      "tilal-masterplan",
+      "etala-masterplan"
+    ],
+    "related": [
+      "cgi",
+      "tours",
+      "reels"
+    ]
+  },
+  {
+    "slug": "reels",
+    "name": "3D Reels & Animation",
+    "short": "Launch and social films",
+    "group": "3D Visualization",
+    "audience": "For developers",
+    "headline": "Launch films that stop the scroll.",
+    "intro": "3D animated reels and launch films for your project, cut for every channel from billboards to Instagram.",
+    "includes": [
+      {
+        "title": "Launch film",
+        "text": "A full fly-through of the compound and its amenities."
+      },
+      {
+        "title": "Social cuts",
+        "text": "Vertical and square edits for Reels, TikTok and Stories."
+      },
+      {
+        "title": "Interior walkthroughs",
+        "text": "Animated tours through the show units."
+      }
+    ],
+    "images": [
+      "etala-aerial",
+      null,
+      null,
+      null
+    ],
+    "related": [
+      "cgi",
+      "tours",
+      "social"
+    ]
+  },
+  {
+    "slug": "tours",
+    "name": "360° Virtual Tours",
+    "short": "Mobile-ready",
+    "group": "3D Visualization",
+    "audience": "For developers",
+    "headline": "Walk through every unit from anywhere.",
+    "intro": "Rendered 360° tours of interiors and streets that buyers open on any phone, before the first brick is laid.",
+    "includes": [
+      {
+        "title": "Interior 360° tours",
+        "text": "Every room of every unit type, fully rendered."
+      },
+      {
+        "title": "Street-level views",
+        "text": "Walk the compound from the gate to the door."
+      },
+      {
+        "title": "Mobile-ready",
+        "text": "Opens on any phone with no app needed."
+      },
+      {
+        "title": "Inside the platform",
+        "text": "Linked to each unit in the interactive solution."
+      }
+    ],
+    "images": [
+      "etala-360-interior",
+      "etala-360-dining",
+      "etala-360-street"
+    ],
+    "related": [
+      "cgi",
+      "plans",
+      "reels"
+    ]
+  },
+  {
+    "slug": "ai",
+    "name": "AI Photo & Video",
+    "short": "Campaign visuals",
+    "group": "Creative & AI Studio",
+    "audience": "For any brand",
+    "headline": "Campaign visuals in days, not weeks.",
+    "intro": "AI-assisted photography and video for brands that need fresh, on-brand visuals at the speed of social media.",
+    "includes": [
+      {
+        "title": "Product and lifestyle photos",
+        "text": "New scenes and settings without a full shoot."
+      },
+      {
+        "title": "Short video ads",
+        "text": "Motion content for social and paid campaigns."
+      },
+      {
+        "title": "A consistent brand look",
+        "text": "Every visual matched to your brand guidelines."
+      }
+    ],
+    "images": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "related": [
+      "printing",
+      "social",
+      "reels"
+    ]
+  },
+  {
+    "slug": "printing",
+    "name": "3D Printing & Scale Models",
+    "short": "Any size",
+    "group": "Creative & AI Studio",
+    "audience": "For any brand",
+    "headline": "Scale models buyers can touch.",
+    "intro": "3D printed scale models of masterplans, buildings and products for sales centres, exhibitions and events.",
+    "includes": [
+      {
+        "title": "Masterplan models",
+        "text": "The whole compound at table scale."
+      },
+      {
+        "title": "Building and unit models",
+        "text": "Detailed models of key buildings and unit types."
+      },
+      {
+        "title": "Any size",
+        "text": "From desktop pieces to large exhibition models."
+      }
+    ],
+    "images": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "related": [
+      "ai",
+      "cgi",
+      "plans"
+    ]
+  },
+  {
+    "slug": "social",
+    "name": "Social Media & Ads",
+    "short": "Content and campaigns",
+    "group": "Marketing",
+    "audience": "For any brand",
+    "headline": "Content and campaigns that bring leads.",
+    "intro": "Social media management and paid advertising that turn your visuals into qualified enquiries.",
+    "includes": [
+      {
+        "title": "Content and design",
+        "text": "Monthly content plans, posts and videos."
+      },
+      {
+        "title": "Paid campaigns",
+        "text": "Ads planned, run and optimized across platforms."
+      },
+      {
+        "title": "Monthly reporting",
+        "text": "Clear numbers on reach, leads and cost per lead."
+      }
+    ],
+    "images": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "related": [
+      "callcenter",
+      "ai",
+      "reels"
+    ]
+  },
+  {
+    "slug": "callcenter",
+    "name": "Contact Center & Telesales",
+    "short": "Inbound and outbound",
+    "group": "Marketing",
+    "audience": "For any brand",
+    "headline": "Every lead answered and followed up.",
+    "intro": "A contact center and telesales team that responds to your enquiries and follows up until the lead is ready to buy.",
+    "includes": [
+      {
+        "title": "Inbound calls and messages",
+        "text": "Every enquiry answered quickly."
+      },
+      {
+        "title": "Outbound telesales",
+        "text": "Follow-up calls to warm up and qualify leads."
+      },
+      {
+        "title": "Reporting",
+        "text": "Call outcomes and lead status shared with your team."
+      }
+    ],
+    "images": [
+      null,
+      null,
+      null
+    ],
+    "related": [
+      "social",
+      "ai",
+      "printing"
+    ]
+  }
+]

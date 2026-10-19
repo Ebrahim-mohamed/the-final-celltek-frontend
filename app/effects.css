@@ -1,0 +1,141 @@
+/* Effects layer: styles the animation script (lib/site-motion.js) depends on.
+   These are states the script toggles (.open, .on, .lit, .solid), starting positions it animates from,
+   pseudo-element overlays and keyframes. Layout, spacing, colour and type live in Tailwind classes
+   in the components. Keep the class names here on their elements: the script finds them by name. */
+
+@layer base {
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  body.loading { overflow: hidden; }
+}
+
+@layer components {
+  /* split headings: the script wraps each word so it can slide up */
+  .split .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .08em; margin-bottom: -.08em; }
+  .split .w > span { display: inline-block; will-change: transform; }
+
+  /* preloader */
+  .pre .logo { clip-path: inset(0 100% 0 0); }
+  .pre .bar i { transform: scaleX(0); transform-origin: left; }
+
+  /* custom cursor */
+  .cur, .cur-ring { transform: translate(-50%, -50%); }
+  .cur-ring { transition: width .35s var(--ease-brand), height .35s var(--ease-brand), background .35s, border-color .35s; }
+  .cur-ring span { transition: opacity .2s; }
+  @media (hover: none), (pointer: coarse) { .cur, .cur-ring { display: none; } }
+
+  /* header: turns solid after scrolling, hides on scroll down */
+  .top { border-bottom: 1px solid transparent; transition: background .4s, border-color .4s, transform .5s var(--ease-brand); }
+  .top.solid { background: rgb(11 13 18 / .82); backdrop-filter: blur(14px); border-color: var(--color-line); }
+  .top.hide { transform: translateY(-100%); }
+
+  /* dropdown menus */
+  .dd > button svg { transition: transform .3s var(--ease-brand); }
+  .dd.open > button svg { transform: rotate(180deg); }
+  .menu { transform: translate(-50%, 10px); opacity: 0; visibility: hidden; transition: opacity .25s, transform .4s var(--ease-brand), visibility .25s; }
+  .menu::before { content: ""; position: absolute; left: 0; right: 0; top: -16px; height: 16px; }
+  .dd.open .menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+
+  /* mobile menu: opens as a circle from the burger */
+  .mnav { clip-path: circle(0% at calc(100% - 42px) 40px); visibility: hidden; transition: clip-path .7s var(--ease-brand); }
+  .mnav.open { clip-path: circle(150% at calc(100% - 42px) 40px); visibility: visible; }
+  .mnav summary::-webkit-details-marker { display: none; }
+  .mnav summary::after { content: "+"; font-weight: 300; font-size: 28px; color: var(--color-muted); transition: transform .3s; }
+  .mnav details[open] summary::after { transform: rotate(45deg); }
+
+  /* hero */
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background: radial-gradient(120% 80% at 70% 40%, transparent 30%, rgb(11 13 18 / .65) 100%),
+      linear-gradient(180deg, rgb(11 13 18 / .55), transparent 22%, transparent 55%, rgb(11 13 18 / .95)); }
+  .hero .tip { transform: translate(-50%, -140%); transition: opacity .2s; }
+  .scrollcue::after { content: ""; position: absolute; inset: 0; background: var(--color-fg); animation: cue 2.2s var(--ease-brand) infinite; }
+  @keyframes cue { 0% { transform: translateY(-100%); } 60%, 100% { transform: translateY(100%); } }
+
+  /* outlined marquee words */
+  .marq span { color: transparent; -webkit-text-stroke: 1px rgb(243 241 236 / .35); }
+  .marq span.f { color: var(--color-fg); -webkit-text-stroke: 0; }
+  .marq span.dot { color: var(--color-accent-hi); -webkit-text-stroke: 0; }
+
+  /* client logos scroll sideways on phones */
+  @media (max-width: 759.98px) { .logo-row { width: max-content; animation: marq 26s linear infinite; } }
+  @keyframes marq { to { transform: translateX(-50%); } }
+
+  /* model-to-render reveal */
+  .reveal .wire img { filter: grayscale(1) contrast(1.6) brightness(.55); mix-blend-mode: screen; opacity: .75; }
+  .reveal .grid-ov { background-image: linear-gradient(rgb(123 150 255 / .18) 1px, transparent 1px), linear-gradient(90deg, rgb(123 150 255 / .18) 1px, transparent 1px); background-size: 64px 64px; }
+  .reveal .real { clip-path: inset(0 0 0 100%); }
+  .reveal .seam { box-shadow: 0 0 30px 6px rgb(123 150 255 / .6); left: 100%; }
+  .reveal .pin::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(90deg, rgb(11 13 18 / .82), rgb(11 13 18 / .35) 45%, transparent 70%), linear-gradient(0deg, rgb(11 13 18 / .7), transparent 45%); }
+
+  /* solution zoom card */
+  .zoom .card { will-change: transform, width, border-radius; }
+  .zoom .card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgb(11 13 18 / 0) 40%, rgb(11 13 18 / .85)); opacity: var(--o, 0); }
+  .zoom .pills > div { opacity: 0; transform: translateY(40px); }
+
+  /* journey: sticky picture stage + steps */
+  .stage figure { clip-path: inset(100% 0 0 0); transition: clip-path 1.1s var(--ease-brand); }
+  .stage figure.on { clip-path: inset(0 0 0 0); }
+  .stage figure img { transform: scale(1.18); transition: transform 1.8s var(--ease-brand); }
+  .stage figure.on img { transform: scale(1); }
+  .stage .big { -webkit-text-stroke: 1px rgb(243 241 236 / .7); }
+  @media (min-width: 1000px) {
+    .step { opacity: .25; transition: opacity .6s; }
+    .step.on { opacity: 1; }
+  }
+
+  /* horizontal gallery */
+  .hz .card img { transform: scale(1.15); }
+  .hz .card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, transparent 50%, rgb(11 13 18 / .8)); }
+  .hz .prog i { transform: scaleX(0); transform-origin: left; }
+
+  /* menu feature card + case hover zooms */
+  .menu .feature::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, transparent 35%, rgb(11 13 18 / .88)); }
+  .zoom-img img { transition: transform 1.2s var(--ease-brand); }
+  .zoom-img:hover img, a:hover > .zoom-img img, .group:hover .zoom-img img { transform: scale(1.06); }
+
+  /* dashboard browser frame tilts in */
+  .browser { transform-origin: 50% 100%; }
+
+  /* brand panels: glow follows the pointer */
+  .panel .glow { left: var(--mx, 50%); top: var(--my, 50%); transform: translate(-50%, -50%); opacity: 0; transition: opacity .4s; }
+  .panel:hover .glow { opacity: 1; }
+
+  /* process line fills as you scroll */
+  .proc .rail i { transform: scaleX(0); transform-origin: left; }
+  .proc .s::before { content: ""; position: absolute; top: -32px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--color-ink); border: 2px solid var(--color-line); transition: border-color .4s, background .4s; }
+  .proc .s.lit::before { border-color: var(--color-accent-hi); background: var(--color-accent-hi); }
+  @media (max-width: 999.98px) {
+    .proc .rail i { transform-origin: top; transform: scaleY(0); }
+    .proc .s::before { top: 4px; left: -34px; }
+  }
+
+  /* striped placeholder for content still to come */
+  .ph { background: repeating-linear-gradient(135deg, var(--color-ink-2) 0 14px, var(--color-ink-3) 14px 28px); }
+  .on-paper .ph { background: repeating-linear-gradient(135deg, #ece8df 0 14px, #e4dfd3 14px 28px); }
+
+  /* FAQ plus sign */
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; flex: none; width: 1em; text-align: center; font-weight: 400; color: var(--color-accent); transition: transform .4s var(--ease-brand); }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+
+  /* numbered steps */
+  .steps3 { counter-reset: s; }
+  .steps3 li { counter-increment: s; }
+  .steps3 li::before { content: counter(s, decimal-leading-zero); position: absolute; left: 0; top: 20px; font-family: var(--font-mono); font-size: 13px; color: var(--color-accent-hi); }
+
+  /* form field error state */
+  .field .err { display: none; }
+  .field.bad .err { display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal, .zoom { height: auto !important; }
+  .reveal .pin, .zoom .pin { position: relative !important; height: auto !important; min-height: 80vh; }
+  .reveal .real { clip-path: none; }
+  .reveal .seam { display: none; }
+  .zoom .card { width: min(1100px, 92vw) !important; }
+  .zoom .pills > div { opacity: 1; transform: none; }
+  .pre { display: none !important; }
+}
