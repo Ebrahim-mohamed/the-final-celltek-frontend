@@ -42,7 +42,6 @@ export default function MobileNav() {
       <a className={item} href="/contact">Contact</a>
       <div className="mt-auto grid gap-3 pt-7">
         <a className={buttonClass('primary', 'md', 'justify-center')} href="/book-a-demo">Book a demo</a>
-        <a className={buttonClass('ghost', 'md', 'justify-center')} href="#" lang="ar">عربي</a>
       </div>
     </div>
   );

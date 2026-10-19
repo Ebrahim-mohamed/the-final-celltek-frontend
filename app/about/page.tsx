@@ -27,10 +27,10 @@ export default function AboutPage() {
         <SectionHead eyebrow="Under one roof" title="From the first render to the last sale" titleClassName="text-display-sm" />
         <LinkCards variant="related" cards={offer} />
       </Section>
-      <Section flushTop>
+      {/* <Section flushTop>
         <SectionHead eyebrow="Team" title="The people behind the work" titleClassName="text-display-sm" />
         <Gallery items={[null, null, null]} alt="Team photo to come" />
-      </Section>
+      </Section> */}
       <ProcessTimeline />
       <CtaSection />
     </main>

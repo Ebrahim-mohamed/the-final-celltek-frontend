@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="mt-12 flex flex-wrap justify-between gap-4 text-sm text-muted"><span>© 2026 Celltek Studios</span><span>English / عربي</span></div>
+        <div className="mt-12 flex flex-wrap justify-between gap-4 text-sm text-muted"><span>© 2026 Celltek Studios</span></div>
       </Container>
     </footer>
   );

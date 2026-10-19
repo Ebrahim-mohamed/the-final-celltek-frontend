@@ -67,7 +67,6 @@ export default function Header() {
             <a href="/contact" className={navItem}>Contact</a>
           </nav>
           <div className="flex items-center gap-3.5">
-            <a className="hidden text-[15px] text-muted md:inline" href="#" lang="ar" title="Arabic version coming">عربي</a>
             <Button magnet size="sm" href="/book-a-demo" data-cta="header">Book a demo</Button>
             <button className="burger grid h-11 w-11 cursor-pointer place-items-center rounded-full border border-fg/30 bg-ink/35 text-fg lg:hidden" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
               <svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M0 1h18M0 7h18M0 13h18" stroke="currentColor" strokeWidth="1.6" /></svg>
