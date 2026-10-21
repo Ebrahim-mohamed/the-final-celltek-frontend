@@ -5,6 +5,7 @@ import SplitLayout from "@/components/sections/SplitLayout";
 import TickList from "@/components/sections/TickList";
 import Gallery from "@/components/sections/Gallery";
 import VideoGallery from "@/components/sections/VideoGallery";
+import VideoGalleryForAi from "@/components/sections/VideoGalleryForAi";
 import NumberedSteps from "@/components/sections/NumberedSteps";
 import LinkCards from "@/components/sections/LinkCards";
 import CtaSection from "@/components/sections/CtaSection";
@@ -116,12 +117,28 @@ export default async function ServicePage({
         {s.slug === "reels" ? (
           <VideoGallery />
         ) : (
+          <></>
+        )}
+        {s.slug === "ai" ? (
+          <div>
+
+          <VideoGalleryForAi />
           <Gallery
             items={s.images}
             alt={`${s.name} sample`}
             placeholder="Sample"
-          />
+            />
+            </div>
+        ) : (
+          <></>
         )}
+        {
+          s.slug !="reels"&&s.slug !="ai"&& <Gallery
+            items={s.images}
+            alt={`${s.name} sample`}
+            placeholder="Sample"
+          />
+        }
       </Section>
 
       <Section flushTop>
