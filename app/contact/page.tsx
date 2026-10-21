@@ -23,13 +23,26 @@ export default function ContactPage() {
       </PageHero>
       <Section flushTop>
         <SplitLayout>
-          <SectionHead className="mb-0" eyebrow="Offices" title="Egypt and Saudi Arabia" titleClassName="text-display-sm">
+          <SectionHead className="mb-0" eyebrow="Offices" title="Egypt  " titleClassName="text-display-sm">
             <TickList items={[
-              { title: 'Egypt', text: 'Office address to come from Celltek' },
-              { title: 'Saudi Arabia', text: 'Office address to come from Celltek' },
+              { title: 'Egypt', text: 'Villa 11, 53th street off 9th street, شارع المقطم، محافظة القاهرة' },
+              
             ]} />
           </SectionHead>
-          <Placeholder className="min-h-[360px] rounded-card">Map to come once addresses are confirmed</Placeholder>
+  
+
+<div className="min-h-[360px] overflow-hidden rounded-card">
+  <iframe
+    title="CELLTEK Location - Al Mokattam, Cairo"
+    src="https://maps.google.com/maps?q=30.0132708,31.292276&z=17&output=embed"
+    className="h-[360px] w-full border-0"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</div>
+
+
         </SplitLayout>
       </Section>
       <CtaSection />

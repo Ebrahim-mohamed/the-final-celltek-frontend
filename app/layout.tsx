@@ -7,7 +7,7 @@ import Motion from '@/components/layout/Motion';
 
 export const metadata: Metadata = {
   title: { default: 'Celltek Studios | Interactive real estate sales platforms', template: '%s | Celltek Studios' },
-  description: 'Interactive sales platforms and 3D visualization for property developers in Egypt and Saudi Arabia.',
+  description: 'Interactive sales platforms and 3D visualization for property developers in Egypt  .',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

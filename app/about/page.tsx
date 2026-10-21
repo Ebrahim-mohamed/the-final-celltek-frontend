@@ -20,7 +20,7 @@ export default function AboutPage() {
     <main id="page">
       <PageHero crumbs={[{ label: 'Home', href: '/' }, { label: 'About' }]} eyebrow="About Celltek Studios"
         title="We build the sales experience before the building."
-        lead="A team of 3D artists, developers and marketers working with property developers in Egypt and Saudi Arabia."
+        lead="A team of 3D artists, developers and marketers working with property developers in Egypt  ."
         image={{ src: '/img/hero.jpg', alt: 'Celltek render of a residential compound' }} />
       <AboutIntro />
       <Section>

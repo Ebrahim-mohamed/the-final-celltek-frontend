@@ -47,7 +47,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <SectionHead className="mb-0" eyebrow="The brief" title="What the developer needed" titleClassName="text-display-sm">
           
           {
-            p.slug==="tilal"? <p className="min-h-[140px] rounded-[14px]">Based in Jeddah, Saudi Arabia, the developer needed a compelling way to showcase the luxury and sophistication of its real estate project. Beyond presenting property units, the goal was to communicate the project's architectural elegance, premium lifestyle, and distinctive features to potential buyers through a visually engaging experience.</p>
+            p.slug==="tilal"? <p className="min-h-[140px] rounded-[14px]">Based in Jeddah,  , the developer needed a compelling way to showcase the luxury and sophistication of its real estate project. Beyond presenting property units, the goal was to communicate the project's architectural elegance, premium lifestyle, and distinctive features to potential buyers through a visually engaging experience.</p>
            : <p className="min-h-[140px] rounded-[14px]">ElManara Development needed an effective way to showcase available units to a wider audience while improving coordination between internal departments. Managing unit information and communication across teams made the sales process more challenging.</p>
           }
             

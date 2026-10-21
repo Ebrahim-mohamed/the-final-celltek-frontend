@@ -56,7 +56,7 @@
     "slug": "tilal",
     "name": "Tilal, Jeddah Heights",
     "client": "Tilal",
-    "location": "Saudi Arabia",
+    "location": " ",
     "services": "Interactive solution, CGI, dashboard",
     "hero": "tilal-platform",
     "stats": [
@@ -93,7 +93,8 @@
     ],
     "gallery": [
       "tilal-masterplan",
-      "dashboard"
+      "dashboard",
+      "tilal-platform"
     ],
     "next": "etala"
   }

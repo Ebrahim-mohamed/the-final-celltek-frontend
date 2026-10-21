@@ -166,10 +166,10 @@
       }
     ],
     "images": [
-      null,
-      null,
-      null,
-      null
+      "ai-1",
+      "ai-2",
+      "ai-3",
+      "ai-4"
     ],
     "related": [
       "printing",
@@ -200,10 +200,10 @@
       }
     ],
     "images": [
-      null,
-      null,
-      null,
-      null
+      "print-1",
+      "print-2",
+      "print-3"
+      
     ],
     "related": [
       "ai",
@@ -234,10 +234,12 @@
       }
     ],
     "images": [
-      null,
-      null,
-      null,
-      null
+      "social-1",
+      "social-2",
+      "social-3",
+      "social-4",
+      "social-5",
+      "social-6"
     ],
     "related": [
       "callcenter",
@@ -268,9 +270,12 @@
       }
     ],
     "images": [
-      null,
-      null,
-      null
+      "tele-1",
+      "tele-2",
+      "tele-3",
+      "tele-4",
+      "tele-5",
+      "tele-6"
     ],
     "related": [
       "social",

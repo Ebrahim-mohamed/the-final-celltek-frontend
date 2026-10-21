@@ -7,7 +7,7 @@ import { caseHighlights } from '@/content/site';
 export default function CaseStudies() {
   return (
     <Section className="cases" id="projects" aria-labelledby="caseH">
-      <SectionHead eyebrow="Proof" title="Delivered in Egypt and Saudi Arabia" titleId="caseH" />
+      <SectionHead eyebrow="Proof" title="Delivered in Egypt  " titleId="caseH" />
       <div className="grid grid-cols-1 gap-cards md:grid-cols-2">
         {caseHighlights.map((c) => (
           <CaseCard key={c.href} href={c.href} img={c.img} alt={c.alt} eyebrow={c.eyebrow} title={c.title}>

@@ -45,7 +45,7 @@ export const dashboardFeatures = [
 export const caseHighlights = [
   { href: '/projects/etala', img: 'etala-aerial', alt: 'Aerial render of Etala, Hadayek October', eyebrow: 'Case study · Egypt', title: 'Etala by El Manara',
     stats: [{ value: '77', count: 77, label: 'units' }, { value: '17', count: 17, label: 'buildings' }, { value: '4', count: 4, label: 'unit types' }] },
-  { href: '/projects/tilal', img: 'tilal-masterplan', alt: 'Tilal villa masterplan, Jeddah Heights', eyebrow: 'Case study · Saudi Arabia', title: 'Tilal, Jeddah Heights',
+  { href: '/projects/tilal', img: 'tilal-masterplan', alt: 'Tilal villa masterplan, Jeddah Heights', eyebrow: 'Case study ·  ', title: 'Tilal, Jeddah Heights',
     stats: [{ value: '4', count: 4, label: 'villa models' }, { value: 'AR/EN', label: 'platform' }, { value: 'Live', label: 'dashboard' }] },
 ];
 
@@ -69,7 +69,7 @@ export const platformSpecs = [
   { title: '360° walkthroughs', text: 'Fully rendered interiors for every unit type.' },
   { title: 'Payment plans', text: 'Prices and installment options shown per unit.' },
   { title: 'Share units', text: 'Your sales team sends units and all data to a client.' },
-  { title: 'Arabic and English', text: 'Built for buyers in Egypt, Saudi Arabia and abroad.' },
+  { title: 'Arabic and English', text: 'Built for buyers in Egypt,   and abroad.' },
   { title: 'Leads to your team', text: 'Every inquiry is tracked in your dashboard.' },
 ];
 

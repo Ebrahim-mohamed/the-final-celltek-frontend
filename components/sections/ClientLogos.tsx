@@ -5,7 +5,7 @@ import { clientLogos } from '@/content/site';
 export default function ClientLogos() {
   return (
     <section className="logos py-14" aria-label="Clients">
-      <p className="mb-[30px] text-center text-sm text-muted">Trusted by developers in Egypt and Saudi Arabia</p>
+      <p className="mb-[30px] text-center text-sm text-muted">Trusted by developers in Egypt  </p>
       <Container className="overflow-hidden">
         <div className="logo-row flex items-center justify-between gap-11 md:gap-10" id="logoRow">
           {clientLogos.map((l) => (

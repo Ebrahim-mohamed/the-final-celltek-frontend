@@ -27,7 +27,7 @@ export const serviceGroups = [
 
 export const projectLinks = [
   { href: '/projects/etala', label: 'Etala by El Manara', note: 'Egypt · 77 units' },
-  { href: '/projects/tilal', label: 'Tilal, Jeddah Heights', note: 'Saudi Arabia · 4 villa models' },
+  { href: '/projects/tilal', label: 'Tilal, Jeddah Heights', note: '  · 4 villa models' },
   { href: '/projects', label: 'All projects', note: 'Renders, plans and platforms' },
 ];
 

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { cn } from '@/lib/cn';
 
-const options = [['all', 'All'], ['eg', 'Egypt'], ['sa', 'Saudi Arabia']] as const;
+const options = [['all', 'All'], ['eg', 'Egypt'], ['sa', ' ']] as const;
 
 // Shows or hides project cards (inside #project-grid) by their data-loc attribute.
 export default function ProjectFilters() {

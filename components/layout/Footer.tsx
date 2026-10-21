@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div className="grid content-start gap-4">
             <img src="/img/celltek-logo.png" alt="Celltek Studios" width="190" height="30" className="h-auto w-[190px]" />
-            <p className="max-w-[34ch] text-muted">Interactive sales platforms and 3D visualization for developers in Egypt and Saudi Arabia.</p>
+            <p className="max-w-[34ch] text-muted">Interactive sales platforms and 3D visualization for developers in Egypt  .</p>
           </div>
           {footerColumns.map((c) => (
             <div key={c.title}>
