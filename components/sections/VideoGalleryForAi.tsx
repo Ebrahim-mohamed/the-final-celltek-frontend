@@ -9,6 +9,11 @@ const videos = [
     type: "landscape",
   },
   {
+    src: "https://res.cloudinary.com/dnevlp0j4/video/upload/v1793628938/final_V07_1_ar5gq3.mp4",
+    title: "Kitchen Rendering",
+    type: "reel",
+  },
+  {
     src: "https://res.cloudinary.com/dnevlp0j4/video/upload/v1792585521/1_sfwhmq.mp4",
     title: "Kitchen Rendering",
     type: "reel",
