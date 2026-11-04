@@ -18,6 +18,10 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+          <div className='flex flex-col'>
+            <a href='terms' className="text-fg-soft hover:text-white">Terms and conditions</a>
+            <a href='privacy' className="text-fg-soft hover:text-white">Privecy policy</a>
+          </div>
         </div>
         <div className="mt-12 flex flex-wrap justify-between gap-4 text-sm text-muted"><span>© 2026 Celltek Studios</span></div>
       </Container>
